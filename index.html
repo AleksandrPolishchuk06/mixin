@@ -68,7 +68,12 @@
           <p class="form_box_adress">237 Haylee Islands Suite 960</p>
           <form class="form_validation" action="">
             <input class="name" type="text" placeholder="NAME" />
-            <input class="mail" type="email" placeholder="EMAIL" />
+            <input
+              class="mail"
+              type="email"
+              placeholder="EMAIL"
+              pattern="^^[a-zA-Z]{3,13}@[a-zA-Z]+\.[a-zA-Z]{2,}$"
+            />
             <textarea
               class="textarea"
               placeholder="Write something..."
