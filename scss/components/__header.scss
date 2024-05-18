@@ -1,0 +1,17 @@
+.header {
+    width: 90%;
+    height: 100px;
+    justify-self: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    &_nav {
+        display: flex;
+
+        &_item {
+            margin-right: 53px;
+            @include font_style ($second_fonts, 300, 20px, 0.02em, $main_text_color);
+        }
+    }
+}

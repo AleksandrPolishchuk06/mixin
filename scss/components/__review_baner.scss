@@ -1,0 +1,46 @@
+.review_baner {
+    display: grid;
+    width: 100%;
+    padding: 120px 115px 192px 115px;
+
+    &_title {
+        @include font_style ($main_fonts, 400, 70px, 0.04em, $main_text_color);
+        text-align: center;
+        margin-bottom: 62px;
+
+        span {
+            color: $title_cclor;
+        }
+    }
+
+    .review_baner_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 50px;
+
+        // background-color: $background_color;
+        .review_baner_desc {
+            align-self: center;
+
+            .review_baner_desc_item {
+                @include font_style ($second_fonts, 400, 18px, 0.04em, $main_text_color);
+                line-height: 150%;
+                font-style: italic;
+                margin-bottom: 20px;
+            }
+
+            .review_baner_decs_item2 {
+                @include font_style ($second_fonts, 600, 18px, 0.04em, $main_text_color);
+                margin: 20px 0 5px 0;
+                line-height: 150%;
+            }
+
+            .review_baner_decs_item3 {
+                @include font_style ($second_fonts, 300, 14px, 0.04em, $main_text_color);
+                line-height: 150%;
+
+            }
+        }
+    }
+
+}

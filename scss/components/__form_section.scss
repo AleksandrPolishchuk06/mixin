@@ -1,0 +1,105 @@
+.form {
+    display: grid;
+    width: 100%;
+    padding: 116px 116px;
+    background-color: $background_color;
+
+    .form_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 0.5fr);
+        grid-template-areas:
+            "form_box_title form_validation"
+            "form_box_title form_validation"
+            "form_box_title form_validation"
+            "form_box_email form_validation"
+            "form_box_adress form_validation";
+
+        .form_box_title {
+            grid-area: form_box_title;
+            @include font_style ($main_fonts, 400, 70px, 0.04em, $main_text_color);
+
+        }
+
+
+
+        .form_box_email {
+            grid-area: form_box_email;
+            @include font_style ($main_fonts, 400, 20px, 0.04em, $title_cclor);
+            line-height: 150%;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            align-self: end;
+        }
+
+        .form_box_adress {
+            @include font_style ($second_fonts, 400, 20px, 0.04em, $main_text_color);
+            grid-area: form_box_adress;
+            line-height: 150%;
+            color: #1f1f1f;
+
+        }
+
+        .form_validation {
+            grid-area: form_validation;
+        }
+
+        .name {
+
+            font-family: $second_fonts;
+            border: 1px solid #c9ccd4;
+            border-radius: 6px;
+            width: 570px;
+            height: 60px;
+            padding: 18px 24px;
+            color: $second_color;
+            margin-bottom: 10px;
+        }
+
+        .mail {
+
+            font-family: $second_fonts;
+            border: 1px solid #c9ccd4;
+            border-radius: 6px;
+            width: 570px;
+            height: 60px;
+            padding: 18px 24px;
+            margin-bottom: 10px;
+        }
+
+        .textarea {
+
+            font-family: $second_fonts;
+            border: 1px solid #c9ccd4;
+            border-radius: 6px;
+            width: 570px;
+            height: 132px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 150%;
+            color: $second_color;
+            padding: 18px 24px;
+            margin-bottom: 10px;
+        }
+
+        .form_btn_box {
+            grid-area: form_btn_box;
+            align-self: center;
+            width: auto;
+            height: auto;
+            position: relative;
+
+
+            .form_btn {
+                @extend .btn;
+                align-self: end;
+            }
+
+            .form_btn_logo {
+                position: absolute;
+                top: 20px;
+                left: 30px;
+            }
+        }
+    }
+}

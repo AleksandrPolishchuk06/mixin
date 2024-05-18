@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  display: grid;
+}
+
+.header {
+  width: 90%;
+  height: 100px;
+  justify-self: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.header_nav {
+  display: flex;
+}
+.header_nav_item {
+  margin-right: 53px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+}
+
+.second_baner {
+  width: 100%;
+  display: grid;
+  padding: 100px 0 0 0;
+}
+.second_baner .second_baner_box {
+  display: grid;
+  height: 490px;
+  grid-template-rows: 0.6fr 1.4fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 0px 0px 80px;
+  background-color: #F5FCF8;
+  grid-template-areas: "second_baner_title second_baner_img" "second_baner_decs  second_baner_img ";
+}
+.second_baner .second_baner_title {
+  grid-area: second_baner_title;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+}
+.second_baner .second_baner_desc {
+  grid-area: second_baner_decs;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+}
+.second_baner .second_baner_img {
+  grid-area: second_baner_img;
+  width: 100%;
+}
+
+.main_baner {
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas: "main_baner_description main_baner_img" "main_baner_btn main_baner_img";
+}
+.main_baner .main_baner_btn {
+  grid-area: main_baner_btn;
+  align-self: flex-start;
+  margin-top: 40px;
+}
+.main_baner .main_baner_description {
+  grid-area: main_baner_description;
+  align-self: end;
+}
+.main_baner .main_baner_description .main_baner_title {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 90px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+}
+.main_baner .main_baner_description .main_baner_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+  line-height: 150%;
+}
+.main_baner .main_baner_img {
+  grid-area: main_baner_img;
+  max-width: 100%;
+  align-self: center;
+}
+
+.review_baner {
+  display: grid;
+  width: 100%;
+  padding: 120px 115px 192px 115px;
+}
+.review_baner_title {
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+  text-align: center;
+  margin-bottom: 62px;
+}
+.review_baner_title span {
+  color: #69AE96;
+}
+.review_baner .review_baner_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.review_baner .review_baner_box .review_baner_desc {
+  align-self: center;
+}
+.review_baner .review_baner_box .review_baner_desc .review_baner_desc_item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+  line-height: 150%;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.review_baner .review_baner_box .review_baner_desc .review_baner_decs_item2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+  margin: 20px 0 5px 0;
+  line-height: 150%;
+}
+.review_baner .review_baner_box .review_baner_desc .review_baner_decs_item3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+  line-height: 150%;
+}
+
+.form {
+  display: grid;
+  width: 100%;
+  padding: 116px 116px;
+  background-color: #F5FCF8;
+}
+.form .form_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, 0.5fr);
+  grid-template-areas: "form_box_title form_validation" "form_box_title form_validation" "form_box_title form_validation" "form_box_email form_validation" "form_box_adress form_validation";
+}
+.form .form_box .form_box_title {
+  grid-area: form_box_title;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 70px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+}
+.form .form_box .form_box_email {
+  grid-area: form_box_email;
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #69AE96;
+  line-height: 150%;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  align-self: end;
+}
+.form .form_box .form_box_adress {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: #1F1F1F;
+  grid-area: form_box_adress;
+  line-height: 150%;
+  color: #1f1f1f;
+}
+.form .form_box .form_validation {
+  grid-area: form_validation;
+}
+.form .form_box .name {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #c9ccd4;
+  border-radius: 6px;
+  width: 570px;
+  height: 60px;
+  padding: 18px 24px;
+  color: #A2A2A2;
+  margin-bottom: 10px;
+}
+.form .form_box .mail {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #c9ccd4;
+  border-radius: 6px;
+  width: 570px;
+  height: 60px;
+  padding: 18px 24px;
+  margin-bottom: 10px;
+}
+.form .form_box .textarea {
+  font-family: "Montserrat", sans-serif;
+  border: 1px solid #c9ccd4;
+  border-radius: 6px;
+  width: 570px;
+  height: 132px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #A2A2A2;
+  padding: 18px 24px;
+  margin-bottom: 10px;
+}
+.form .form_box .form_btn_box {
+  grid-area: form_btn_box;
+  align-self: center;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.form .form_box .form_btn_box .form_btn {
+  align-self: end;
+}
+.form .form_box .form_btn_box .form_btn_logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.footer {
+  display: grid;
+  width: 90%;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 40px 0;
+  justify-self: center;
+  align-items: center;
+}
+.footer .footer_logo {
+  justify-self: center;
+}
+.footer_nav {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+}
+.footer_nav_item {
+  margin-right: 53px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+}
+.footer .footer_codition {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #1F1F1F;
+}
+
+.btn, .main_baner .main_baner_btn, .form .form_box .form_btn_box .form_btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  padding: 20px 60px;
+  border-radius: 40px;
+  color: white;
+  background-color: #69AE96;
+}/*# sourceMappingURL=main.css.map */

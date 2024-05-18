@@ -1,0 +1,38 @@
+.main_baner {
+    width: 90%;
+    height: fit-content;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+        "main_baner_description main_baner_img"
+        "main_baner_btn main_baner_img";
+
+    .main_baner_btn {
+        grid-area: main_baner_btn;
+        align-self: flex-start;
+        @extend .btn;
+        margin-top: 40px;
+    }
+
+    .main_baner_description {
+        grid-area: main_baner_description;
+        align-self: end;
+
+        .main_baner_title {
+            @include font_style ($main_fonts, 400, 90px, 0.04em, $main_text_color);
+        }
+
+        .main_baner_text {
+            @include font_style ($second_fonts, 300, 20px, 0.02em, $main_text_color);
+            line-height: 150%;
+        }
+    }
+
+    .main_baner_img {
+        grid-area: main_baner_img;
+        max-width: 100%;
+        align-self: center;
+    }
+}

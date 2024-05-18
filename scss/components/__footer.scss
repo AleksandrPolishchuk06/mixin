@@ -1,0 +1,29 @@
+.footer {
+    display: grid;
+    width: 90%;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 40px 0;
+    justify-self: center;
+    align-items: center;
+
+    .footer_logo {
+        justify-self: center;
+    }
+
+    &_nav {
+        display: flex;
+        font-family: $second_fonts;
+        justify-content: center;
+
+        &_item {
+            margin-right: 53px;
+            @include font_style ($second_fonts, $font-weight_300, $font-size_20, 0.02em, $main_text_color);
+        }
+
+    }
+
+    .footer_codition {
+        text-align: center;
+        @include font_style ($second_fonts, $font-weight_300, $font-size_16, 0.02em, $main_text_color);
+    }
+}
