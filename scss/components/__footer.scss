@@ -8,6 +8,7 @@
 
     .footer_logo {
         justify-self: center;
+        cursor: pointer;
     }
 
     &_nav {
@@ -17,6 +18,7 @@
 
         &_item {
             margin-right: 53px;
+            cursor: pointer;
             @include font_style ($second_fonts, $font-weight_300, $font-size_20, 0.02em, $main_text_color);
         }
 

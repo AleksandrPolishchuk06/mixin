@@ -36,7 +36,7 @@
             @include font_style ($second_fonts, 400, 20px, 0.04em, $main_text_color);
             grid-area: form_box_adress;
             line-height: 150%;
-            color: #1f1f1f;
+            cursor: pointer;
 
         }
 
@@ -93,6 +93,7 @@
             .form_btn {
                 @extend .btn;
                 align-self: end;
+                cursor: pointer;
             }
 
             .form_btn_logo {

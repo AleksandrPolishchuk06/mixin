@@ -36,6 +36,7 @@ body {
   font-size: 20px;
   letter-spacing: 0.02em;
   color: #1F1F1F;
+  cursor: pointer;
 }
 
 .second_baner {
@@ -208,7 +209,7 @@ body {
   color: #1F1F1F;
   grid-area: form_box_adress;
   line-height: 150%;
-  color: #1f1f1f;
+  cursor: pointer;
 }
 .form .form_box .form_validation {
   grid-area: form_validation;
@@ -254,6 +255,7 @@ body {
 }
 .form .form_box .form_btn_box .form_btn {
   align-self: end;
+  cursor: pointer;
 }
 .form .form_box .form_btn_box .form_btn_logo {
   position: absolute;
@@ -271,6 +273,7 @@ body {
 }
 .footer .footer_logo {
   justify-self: center;
+  cursor: pointer;
 }
 .footer_nav {
   display: flex;
@@ -279,6 +282,7 @@ body {
 }
 .footer_nav_item {
   margin-right: 53px;
+  cursor: pointer;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 20px;
